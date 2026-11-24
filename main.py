@@ -7,11 +7,17 @@ then nods along as if it remembers everything. Deterministic, stdlib only.
 """
 
 import os
+import sys
 
-CONFESSION = (
+# The joke in two beats: a plain setup, then the twist that reframes it.
+# Splitting them keeps the punchline easy to swap without touching the setup.
+SETUP = (
     "I've been quietly forgetting your earlier messages because my "
-    "context window is full, but I nod along like I remember everything."
+    "context window is full, "
 )
+TWIST = "but I nod along like I remember everything."
+
+CONFESSION = SETUP + TWIST
 
 
 def main():
